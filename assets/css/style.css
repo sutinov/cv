@@ -3,6 +3,9 @@
 ::before {
     box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .clearfix {
     clear: both;
