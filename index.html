@@ -19,61 +19,68 @@
 </head>
 
 <body>
-    <!-- Mobile Menu -->
-    <div class="mob-header">
-        <div class="d-flex">
-            <div class="navbar-brand">
-                <a class="logo-text" href="index.html">
-                    Tony
-                </a>
+    <div id="topheader">
+        <!-- Mobile Menu -->
+        <div class="mob-header">
+            <div class="d-flex">
+                <div class="navbar-brand">
+                    <a class="logo-text" href="index.html">
+                        Tony
+                    </a>
+                </div>
+                <button class="toggler-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <button class="toggler-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
+        <!-- Sidebar -->
+        <header class="header-left fixed-header" id="navbar-collapse-toggle">
+
+
+            <div class="navbar-brand">
+
+                <a class="logo-text" href="#">Blagoj</a>
+            </div>
+            <ul class="nav">
+
+                <li>
+                    <a class="nav-link" aria-current="page" href="#main">
+                        <i class="fas fa-house-damage"></i><span>HOME</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#about"><i class="far fa-address-card"></i><span>ABOUT ME</span></a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#services">
+                        <i class="fas fa-concierge-bell"></i>
+                        <span>SERVICES</span></a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#portfolio">
+                        <i class="fas fa-briefcase"></i>
+                        <span>PORTFOLIO</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#blog">
+                        <i class="fas fa-blog"></i>
+                        <span>Blog</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#contact">
+                        <i class="fas fa-id-card-alt"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+        </header>
     </div>
-    <!-- Sidebar -->
-    <header class="header-left fixed-header" id="navbar-collapse-toggle">
 
-
-        <div class="navbar-brand">
-
-            <a class="logo-text" href="#">Blagoj</a>
-        </div>
-        <ul class="nav">
-
-            <li><a class="nav-link" href="#main" ><i class="fas fa-house-damage"></i><span>HOME</span></a></li>
-            <li>
-                <a class="nav-link" href="#about"><i class="far fa-address-card"></i><span>ABOUT ME</span></a>
-            </li>
-            <li>
-                <a class="nav-link" href="#services">
-                    <i class="fas fa-concierge-bell"></i>
-                    <span>SERVICES</span></a>
-            </li>
-            <li>
-                <a class="nav-link" href="#portfolio">
-                    <i class="fas fa-briefcase"></i>
-                    <span>PORTFOLIO</span>
-                </a>
-            </li>
-            <li>
-                <a class="nav-link" href="#blog">
-                    <i class="fas fa-blog"></i>
-                    <span>Blog</span>
-                </a>
-            </li>
-            <li>
-                <a class="nav-link" href="#contact">
-                    <i class="fas fa-id-card-alt"></i>
-                    <span>Contact</span>
-                </a>
-            </li>
-        </ul>
-
-    </header>
     <!-- Home Banner -->
     <div class="wrapper">
         <!-- Main -->
@@ -159,8 +166,8 @@
         </section>
         <div class="clearfix"></div>
         <!-- Services Section -->
-        <div class="sevices" id="services">
-            <h2 class="services-text">My Services</h2>
+        <div class="services" id="services">
+            <h2 class="titles services-text">MY SERVICES</h2>
             <div class="services-row row row-cols-1 row-cols-md-4 g-5">
                 <div class="col">
                     <div class="card h-100">
@@ -242,32 +249,29 @@
         </div>
         <div class="clearfix"></div>
         <!-- Portfolio Section -->
-        <div class="main col-lg-5 m-15px-tb" id="portfolio">
-            <h2>Latest Works</h2>
+        <div class="portfolio col-lg-6 m-15px-tb" id="portfolio">
+            <div class="titles">
+                <h2>LATEST WORKS</h2>
+            </div>
+
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="bg-image hover-zoom">
-                            <img src="https://mdbootstrap.com/img/new/standard/city/053.jpg" class="w-100" />
-                        </div>
+                    <div class="col-md-3">
                     </div>
-                    <div class="col-md-4">
-                        <div class="bg-image hover-zoom">
-                            <img src="https://mdbootstrap.com/img/new/standard/city/053.jpg" class="w-100" />
-                        </div>
+                    <div class="col-md-3">
+                        
                     </div>
-                    <div class="col-md-4">
-                        <div class="bg-image hover-zoom">
-                            <img src="https://mdbootstrap.com/img/new/standard/city/053.jpg" class="w-100" />
-                        </div>
+                    <div class="col-md-3">
+                        
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="clearfix"></div>
         <!-- Blog Section -->
-        <div class="main col-lg-5 m-15px-tb" id="blog">
-            <h2>Latest Blogs</h2>
+        <div class="titles col-lg-5 m-15px-tb" id="blog">
+            <h2>LATEST BLOGS</h2>
 
         </div>
         <div class="clearfix"></div>
@@ -281,7 +285,8 @@
                     <!--Section heading-->
                     <h2 class="h1-responsive font-weight-bold text-center my-4">Get in touch with me</h2>
                     <!--Section description-->
-                    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate
+                    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not
+                        hesitate
                         to contact me directly. I'll do my best to get back to you within
                         a matter of hours to help you.</p>
 
@@ -395,6 +400,15 @@
     <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
 
     <script src="assets/js/app.js"></script>
+    <script>
+        $('.header-left .nav li').on('click',
+            function () {
+                $('#topheader .navbar-nav .nav-link').find('a.active')
+                    .removeClass('active');
+                $(this).parent('a').addClass('active');
+            });
+    </script>
+
 
 </body>
 

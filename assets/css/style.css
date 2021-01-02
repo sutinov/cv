@@ -197,6 +197,10 @@ ul {
     width: 100%;
 }
 
+.titles {
+    padding: 3% 5%;
+}
+
 /* Main Secton */
 .wrapper {
     padding-left: 100px;
@@ -210,7 +214,7 @@ ul {
 }
 
 .intro {
-    position: absolute;
+    position: relative;
     margin-top: 10%;
     margin-left: 5%;
 }
@@ -279,6 +283,22 @@ ul {
 
 .col {
     margin: 2%;
+}
+
+.zoom {
+    width: 32%;
+    float: left;
+}
+
+.my-work {
+    box-sizing: border-box;
+    width: 30%;
+}
+
+.portfolio-box-01 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
 }
 
 /* Contact me Section */
