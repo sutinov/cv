@@ -31,3 +31,17 @@ function validateForm() {
   }
   document.querySelector('.status').innerHTML = "Sending...";
 }
+function clickMenu(){
+let openMenu = document.querySelector('header');
+if (openMenu.classList.contains('menu-open', 'menu-open-desk')){
+    openMenu.classList.remove('menu-open', 'menu-open-desk')
+}
+else {
+     openMenu.classList.add('menu-open', 'menu-open-desk')
+
+}
+
+}
+
+
+

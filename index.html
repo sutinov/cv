@@ -16,70 +16,77 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/mdb.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
-<body>
-    <div id="topheader">
+<body data-spy="scroll" data-target="#navbar-collapse-toggle" data-offset="70">>
+    
         <!-- Mobile Menu -->
+
         <div class="mob-header">
-            <div class="d-flex">
-                <div class="navbar-brand">
-                    <a class="logo-text" href="index.html">
-                        Tony
-                    </a>
-                </div>
-                <button class="toggler-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+        <div class="d-flex">
+            <div class="navbar-brand">
+                <a class="logo-text" href="index.html">
+                    Blagoj
+                </a>
             </div>
+          <button onclick="clickMenu()" class="toggler-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+          </button>
         </div>
-        <!-- Sidebar -->
+      </div>
+               <!-- Sidebar -->
+               
         <header class="header-left fixed-header" id="navbar-collapse-toggle">
 
 
-            <div class="navbar-brand">
+           
+                <div class="navbar-brand">
 
-                <a class="logo-text" href="#">Blagoj</a>
-            </div>
-            <ul class="nav">
+                    <a class="logo-text" href="#">Blagoj</a>
+                </div>
+                <ul class="nav">
 
-                <li>
-                    <a class="nav-link" aria-current="page" href="#main">
-                        <i class="fas fa-house-damage"></i><span>HOME</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#about"><i class="far fa-address-card"></i><span>ABOUT ME</span></a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#services">
-                        <i class="fas fa-concierge-bell"></i>
-                        <span>SERVICES</span></a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#portfolio">
-                        <i class="fas fa-briefcase"></i>
-                        <span>PORTFOLIO</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#blog">
-                        <i class="fas fa-blog"></i>
-                        <span>Blog</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#contact">
-                        <i class="fas fa-id-card-alt"></i>
-                        <span>Contact</span>
-                    </a>
-                </li>
-            </ul>
+                    <li>
+                        <a class="nav-link" aria-current="page" href="#main">
+                            <i class="fas fa-house-damage"></i><span>HOME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#about"><i class="far fa-address-card"></i><span>ABOUT ME</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#services">
+                            <i class="fas fa-concierge-bell"></i>
+                            <span>SERVICES</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#portfolio">
+                            <i class="fas fa-briefcase"></i>
+                            <span>PORTFOLIO</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#blog">
+                            <i class="fas fa-blog"></i>
+                            <span>Blog</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#contact">
+                            <i class="fas fa-id-card-alt"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                
+           
 
         </header>
-    </div>
+   
 
     <!-- Home Banner -->
     <div class="wrapper">
@@ -90,7 +97,8 @@
                 <div class="intro">
                     <h3>Hi...</h3>
                     <h1><b>I'm Blagoj</b></h1>
-                    <h2>I'm a passionate <br> <span style="display:inline;position:relative;font:inherit;color:inherit;"
+                    <h2 class="intro-type">I'm a passionate <br> <span
+                            style="display:inline;position:relative;font:inherit;color:inherit;"
                             id="myElement">Designer<br /> and Web Developer.</span></h2>
 
                 </div>
@@ -259,10 +267,10 @@
                     <div class="col-md-3">
                     </div>
                     <div class="col-md-3">
-                        
+
                     </div>
                     <div class="col-md-3">
-                        
+
                     </div>
                 </div>
             </div>
